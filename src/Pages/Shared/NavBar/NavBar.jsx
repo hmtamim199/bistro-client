@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   const navbarOptions = (
     <>
-      <li></li>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/menu">Our Menu</Link>
+      </li>
     </>
   );
   return (

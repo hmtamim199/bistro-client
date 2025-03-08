@@ -4,7 +4,7 @@ import "./Featured.css";
 
 const Featured = () => {
   return (
-    <div className="featured-item bg-fixed text-white my-10">
+    <div className="featured-item bg-fixed  my-10">
       <SectionTitle subHeading="" heading=""></SectionTitle>
       <div className="md:flex justify-center items-center py-20 mx-36">
         <div>
@@ -20,7 +20,9 @@ const Featured = () => {
             Facilis itaque perferendis saepe fugit? Nisi atque quisquam
             praesentium sed eligendi, eum dicta aliquid ipsa! Minima!
           </p>
-          <button className="btn btn-outline">Read more</button>
+          <button className="btn btn-outline border-0 border-b-4 mt-4">
+            Read more
+          </button>
         </div>
       </div>
     </div>
