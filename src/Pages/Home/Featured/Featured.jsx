@@ -14,11 +14,9 @@ const Featured = () => {
           <p>aug 23 2025</p>
           <p className="uppercase">where can i get some?</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-            temporibus, repellat placeat, laborum voluptatibus reprehenderit
-            culpa non obcaecati inventore adipisci facilis sed tempore eius!
-            Facilis itaque perferendis saepe fugit? Nisi atque quisquam
-            praesentium sed eligendi, eum dicta aliquid ipsa! Minima!
+            this is our most featured item in this beautyifull resturant , you
+            can choose out most delisiuos food and you should try it, becouse
+            our best shef coock this meal
           </p>
           <button className="btn btn-outline border-0 border-b-4 mt-4">
             Read more
