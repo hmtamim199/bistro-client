@@ -70,6 +70,7 @@ const SingUp = () => {
           <p>
             <small>
               Already have an account <Link to="/login">Login</Link>
+              <p>assalamu alaikum </p>
             </small>
           </p>
         </div>
