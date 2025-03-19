@@ -16,7 +16,7 @@ const Featured = () => {
           <p>
             this is our most featured item in this beautyifull resturant , you
             can choose out most delisiuos food and you should try it, becouse
-            our best shef coock this meal
+            our best shef coock this meal, you can try this ffod from our menu.
           </p>
           <button className="btn btn-outline border-0 border-b-4 mt-4">
             Read more
