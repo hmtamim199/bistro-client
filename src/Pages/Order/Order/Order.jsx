@@ -29,7 +29,7 @@ const Order = () => {
           <Tab>pizza</Tab>
           <Tab>soup</Tab>
           <Tab>dessert</Tab>
-          <Tab>drink</Tab>
+          <Tab>drinks</Tab>
         </TabList>
         <TabPanel>
           <div className="grid md:grid-cols-3 gap-4">
