@@ -5,7 +5,8 @@ import Menu from "../Pages/Menu/Menu/Menu";
 import Order from "../Pages/Order/Order/Order";
 import Login from "../Pages/Login/Login";
 import SingUp from "../Pages/SingUp/SingUp";
-
+import Dashboard from "../Layout/Dashboard";
+import Cart from "../Pages/UserDashboard/Cart/Cart";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,16 @@ export const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SingUp></SingUp>,
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: "cart",
+        element: <Cart></Cart>,
       },
     ],
   },
