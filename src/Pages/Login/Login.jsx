@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import SocialLogin from "../../components/SocialLogin";
 
 const Login = () => {
   const { singIn } = useContext(AuthContext);
@@ -55,10 +56,11 @@ const Login = () => {
             </fieldset>
           </form>
           <p>
-            <small>
+            <small className="ml-2">
               New Here? <Link to="/signup">Create an account</Link>{" "}
             </small>
           </p>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

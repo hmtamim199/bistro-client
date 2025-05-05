@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const SingUp = () => {
   const {
@@ -12,13 +13,20 @@ const SingUp = () => {
 
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
+  const axiosPublic = useAxiosPublic();
 
   const onSubmit = (data) => {
     console.log(data);
     createUser(data.email, data.password).then((result) => {
       const user = result.user;
-      console.log(user);
-      navigate("/");
+      const userInfo = { name: data.name, email: data.email };
+
+      axiosPublic.post("/users", userInfo).then((res) => {
+        if (res.data.insertedId) {
+          alert("User Created Successfully");
+          navigate("/");
+        }
+      });
     });
   };
   return (
