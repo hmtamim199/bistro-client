@@ -1,11 +1,22 @@
 import useAuth from "../hooks/useAuth";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 
 const SocialLogin = () => {
   const { googleSingIn } = useAuth();
+  const axiosPublic = useAxiosPublic();
   const handleSocialLogin = () => {
     googleSingIn().then((result) => {
       const user = result.user;
       console.log(user);
+
+      const userInfo = {
+        email: result.user.email,
+        name: result.user.displayName,
+      };
+
+      axiosPublic.post("/users", userInfo).then((res) => {
+        console.log(res.data);
+      });
     });
   };
 

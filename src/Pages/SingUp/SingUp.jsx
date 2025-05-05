@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
+import SocialLogin from "../../components/SocialLogin";
 
 const SingUp = () => {
   const {
@@ -81,6 +82,7 @@ const SingUp = () => {
             <small>
               Already have an account <Link to="/login">Login</Link>
             </small>
+            <SocialLogin></SocialLogin>
           </p>
         </div>
       </div>
