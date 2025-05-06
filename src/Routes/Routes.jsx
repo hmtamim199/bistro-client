@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import SingUp from "../Pages/SingUp/SingUp";
 import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/UserDashboard/Cart/Cart";
+import AllUsers from "../Pages/UserDashboard/AllUsers/AllUsers";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart></Cart>,
+      },
+      {
+        path: "users",
+        element: <AllUsers></AllUsers>,
       },
     ],
   },
